@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/my_music_cover"
+    >
+    <com.asiantech.mp3pro.utils.CircleImageView 
+        android:id="@+id/imgTopView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_centerVertical="true"
+      	android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_lrc_default_cover"
+        />
+    <TextView 
+        android:id="@+id/baihat"
+       android:layout_toRightOf="@+id/imgTopView"
+       android:layout_marginLeft="10dp"
+       android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Music"
+        android:textColor="#ffffff"
+        />
+    
+</RelativeLayout>

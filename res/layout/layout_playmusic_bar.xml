@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlPlayMusic"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="#150517"
+     >
+
+    <ImageView
+        android:id="@+id/imgAlbumArt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true"
+        android:paddingLeft="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/default_cover" />
+
+    <LinearLayout
+        android:id="@+id/rlInfoBaihat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgAlbumArt"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/txtSongName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtTacGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlButtonConTrolMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/imgPrevious"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_bar_bg_2"
+            android:duplicateParentState="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_btn_prev_tab" />
+
+        <RelativeLayout
+            android:id="@+id/rlButtonPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgPrevious" >
+
+            <ImageView
+                android:id="@+id/imgPlayButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_bar_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_btn_play_tab"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imgPauseButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_bar_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_btn_pause_tab" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgNextButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/rlButtonPlayPause"
+            android:background="@drawable/btn_bar_bg_2"
+            android:duplicateParentState="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_btn_next_tab" />
+    </RelativeLayout>
+
+</RelativeLayout>

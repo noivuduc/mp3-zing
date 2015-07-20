@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlPlayMusic"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" >
+
+        <ImageView
+            android:id="@+id/imgCD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_cover_big" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_cd_center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTool"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/rlPlayMusic"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/imgDownLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_action_download" />
+
+        <ImageView
+            android:id="@+id/imgDownRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_down_right_arrow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DDDDDD" />
+    </RelativeLayout>
+
+    <com.asiantech.mp3pro.utils.ScrollTextView
+        android:id="@+id/scrLyrics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool" />
+
+</RelativeLayout>

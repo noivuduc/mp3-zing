@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/pp_add_list"
+        android:title="Thêm vào danh sách"/>
+    <item
+        android:id="@+id/pp_add_playlist"
+        android:title="Thêm vào playlist"/>
+    <item
+        android:id="@+id/pp_set_ringtone"
+        android:title="Cài làm nhạc chuông"/>
+    <item
+        android:id="@+id/pp_xoa"
+        android:title="Xóa"/>
+
+</menu>

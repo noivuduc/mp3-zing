@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.mp3pro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <com.asiantech.mp3pro.utils.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textColor="#777777"
+        android:textSize="12sp"
+        app:pstsDividerColor="#CC00CC"
+        app:pstsIndicatorColor="#CC00CC"
+        app:pstsShouldExpand="true"
+        app:pstsTabPaddingLeftRight="14dp"
+        app:pstsIndicatorHeight="5dp"
+        app:pstsTextAllCaps="true"
+        app:pstsUnderlineColor="#777777" 
+        android:background="@drawable/background_tab"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/tabs"
+        android:id="@+id/vpContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" />
+    
+
+</RelativeLayout>
